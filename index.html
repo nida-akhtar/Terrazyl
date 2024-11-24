@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terrazyl - Real Estate Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="logo">Terrazyl</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#filters">Filters</a></li>
+                <li><a href="#listings">Listings</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Discover Your Perfect Property</h1>
+            <p>Find properties that match your lifestyle and preferences.</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section id="filters" class="filter-section">
+        <h2>Search Filters</h2>
+        <form id="property-filters">
+            <div class="filter-group">
+                <label for="rooms">Number of Rooms:</label>
+                <select id="rooms" name="rooms">
+                    <option value="any">Any</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4+">4+</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="area">Area (sq ft):</label>
+                <input type="number" id="area" name="area" placeholder="e.g., 1200">
+            </div>
+            <div class="filter-group">
+                <label for="floors">Number of Floors:</label>
+                <select id="floors" name="floors">
+                    <option value="any">Any</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3+">3+</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="price-range">Price Range (PKR):</label>
+                <input type="number" id="price-min" name="price-min" placeholder="Min">
+                <input type="number" id="price-max" name="price-max" placeholder="Max">
+            </div>
+            <button type="submit" class="filter-btn">Apply Filters</button>
+        </form>
+    </section>
+
+    <!-- Property Listings -->
+    <section id="listings" class="listings">
+        <h2>Featured Listings</h2>
+        <div class="property-grid">
+            <div class="property-card">
+                <img src="https://via.placeholder.com/300x200" alt="Property Image">
+                <div class="property-info">
+                    <h3>3 Bedroom Apartment</h3>
+                    <p>Location: Lahore</p>
+                    <p>Area: 1200 sq ft</p>
+                    <p>Price: PKR 12,000,000</p>
+                </div>
+            </div>
+            <div class="property-card">
+                <img src="https://via.placeholder.com/300x200" alt="Property Image">
+                <div class="property-info">
+                    <h3>5 Marla House</h3>
+                    <p>Location: Karachi</p>
+                    <p>Area: 1500 sq ft</p>
+                    <p>Price: PKR 18,000,000</p>
+                </div>
+            </div>
+            <div class="property-card">
+                <img src="https://via.placeholder.com/300x200" alt="Property Image">
+                <div class="property-info">
+                    <h3>2 Kanal Villa</h3>
+                    <p>Location: Islamabad</p>
+                    <p>Area: 8000 sq ft</p>
+                    <p>Price: PKR 45,000,000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <p>&copy; 2024 Terrazyl. All rights reserved.</p>
+        <p>Email: info@terrazyl.com | Phone: +92 123 456789</p>
+    </footer>
+</body>
+</html>
